@@ -32,7 +32,7 @@ public class TimeFormat {
             return;
 		}
         
-		int hours12 = (hours % 12 == 0) ? 0 : hours % 12;
+		int hours12 = (hours % 12 == 0) ? 00 : hours % 12;
 		if (hours < 12) {
 			if (minutes < 10) {
 				System.out.println(hours12 + ":0" + minutes + " AM");
