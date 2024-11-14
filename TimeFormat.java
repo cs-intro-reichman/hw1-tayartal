@@ -43,7 +43,7 @@ public class TimeFormat {
 			if (minutes < 10) {
 				System.out.println(hours12 + ":0" + minutes + " PM");
 			}
-			System.out.println(hours12 + ":" + minutes + " PM");
+			else System.out.println(hours12 + ":" + minutes + " PM");
 		}
 
 	}

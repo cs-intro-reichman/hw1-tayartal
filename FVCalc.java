@@ -2,7 +2,7 @@
 public class FVCalc {
 	public static void main(String[] args){
 		// Replace this comment with your code
-		double currentValue = Double.parseDouble(args[0]);
+		int currentValue = Integer.parseInt(args[0]);
 		double ratePrecent = Double.parseDouble(args[1]);
 		double numberOfYears = Double.parseDouble(args[2]);
 		double rate = ratePrecent / 100;
