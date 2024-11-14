@@ -31,8 +31,14 @@ public class TimeFormat {
 			System.out.println("Invalid minutes , should be a digit 0 and 59");
             return;
 		}
-        
-		int hours12 = (hours % 12 == 0) ? 00 : hours % 12;
+		int hours12;
+        if (hours == 12) {
+			hours12 = 12;
+		}
+		else if (hours == 00) {
+			hours12 = 0;
+		}
+		else hours12 = hours % 12;
 		if (hours < 12) {
 			if (minutes < 10) {
 				System.out.println(hours12 + ":0" + minutes + " AM");
